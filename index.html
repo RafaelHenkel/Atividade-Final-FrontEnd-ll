@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty api</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="headerNav">
+        <a href="https://pt.wikipedia.org/wiki/Rick_and_Morty"
+          ><img src="./style/imgLogo.png" id="imgLogo"
+        /></a>
+        <ul id="about">
+          <li>Docs</li>
+          <li>About</li>
+          <li id="support">SUPPORT US</li>
+        </ul>
+      </nav>
+      <section>
+        <h1>The Rick and Morty API</h1>
+        <form id="search">
+          <input type="text" placeholder="buscar" id="searchBox" />
+          <button id="btn">
+            <img src="./style/search-icon-png-5.png" alt="searchIcon"/>
+          </button>
+        </form>
+      </section>
+    </header>
+    <main>
+      <div id="divCards"></div>
+    </main>
+    <footer>
+      <div>
+        <button id="previousPage" onclick="prevButton()">Voltar Pagina</button>
+        <button id="nextPage" onclick="nextButton()">Proxima Pagina</button>
+      </div>
+      <p>Desenvolvido por: <span>Rafael</span> em 2024</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./api.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
