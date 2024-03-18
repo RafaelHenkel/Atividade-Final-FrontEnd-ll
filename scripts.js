@@ -11,7 +11,7 @@ const getCharacters = async () => {
     const data = {
       page,
     };
-    console.log(data);
+
     const response = await api.get("/character/", { params: data });
     const limit = response.data.info.pages;
     const characters = response.data.results;
