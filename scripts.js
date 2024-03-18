@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 let page = parseInt(urlParams.get("page")) || 1;
 const getDiv = document.getElementById("divCards");
+const pageActual = document.getElementById("pageActual");
 
 const getCharacters = async () => {
   try {
@@ -24,6 +25,7 @@ const getCharacters = async () => {
 
     previousPage.disabled = page === 1;
     nextPage.disabled = limit === page;
+    pageActual.textContent = `Pagina atual ${page}`;
   } catch (error) {
     console.log(error);
   }
@@ -44,5 +46,3 @@ const prevButton = () => {
     getCharacters();
   }
 };
-
-
