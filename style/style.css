@@ -116,7 +116,7 @@ main {
   width: 40rem;
 }
 
-#insideCard {
+.insideCard {
   display: flex;
   text-align: start;
 }
@@ -129,7 +129,7 @@ main {
   object-fit: cover;
 }
 
-#textCard {
+.textCard {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

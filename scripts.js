@@ -19,7 +19,7 @@ const getCharacters = async () => {
       const newDiv = document.createElement("div");
       newDiv.classList.add("cardStyle");
 
-      newDiv.innerHTML = `<div id="insideCard"><img src ="${character.image}"><div id="textCard"><h1> ${character.name}</h1><p>Status - ${character.status}</p><p>${character.species}</p></div></div>`;
+      newDiv.innerHTML = `<div class="insideCard"><img src ="${character.image}"><div class="textCard"><h1> ${character.name}</h1><p>Status - ${character.status}</p><p>${character.species}</p></div></div>`;
       getDiv.appendChild(newDiv);
     });
 
