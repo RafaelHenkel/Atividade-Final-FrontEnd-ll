@@ -34,15 +34,13 @@ const getCharacters = async () => {
 getCharacters();
 
 const nextButton = () => {
-  page++;
-  getDiv.innerHTML = ``;
-  getCharacters();
+  const novaPagina = page + 1;
+  window.location.href = `?page=${novaPagina}`;
 };
 
 const prevButton = () => {
   if (page > 1) {
-    page--;
-    getDiv.innerHTML = ``;
-    getCharacters();
+    const novaPagina = page - 1;
+    window.location.href = `?page=${novaPagina}`;
   }
 };
